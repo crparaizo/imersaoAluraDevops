@@ -1,0 +1,10 @@
+services:
+  api:
+    build: . #Constrói a imagem a partir do Dockerfile na raiz do projeto
+    container_name: imesao_alura_devops #Nome do container
+    ports:
+      - "8000:8000" #Mapeia a porta 8000 do host para a porta 8000 do container
+    volumes:
+      # Monta o diretório atual no workdir do contêiner.
+      # Isso permite o live-reloading e persiste o banco de dados SQLite no seu host.
+      - .:/app
