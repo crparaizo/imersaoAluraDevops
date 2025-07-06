@@ -47,6 +47,14 @@ Este projeto é uma API desenvolvida com FastAPI para gerenciar alunos, cursos e
 
 ---
 
+## Autenticando no Google Cloud
+   ```sh 
+   gcloud auth login
+   gcloud config set project PROJECT_ID
+   gcloud run deploy --port=8000
+   ```
+
+
 ## Estrutura do Projeto
 
 - `app.py`: Arquivo principal da aplicação FastAPI.
@@ -63,12 +71,13 @@ Este projeto é uma API desenvolvida com FastAPI para gerenciar alunos, cursos e
 
 ---
 
-7. **Para execultar aqrquivo em outras máquinas**
+7. **Para execultar arquivo em outras máquinas**
 
    - Baixar o docker
-   - Fzer download do projeto no repositório no github
+   - Fazer download do projeto no repositório no github
    - Acessar pasta raiz do projeto
-   - Digitar comando no termina 
+   - Digitar comando abaixo no terminal:
+
    ```sh 
    docker compose up
    ```
